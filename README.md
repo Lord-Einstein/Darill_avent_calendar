@@ -34,8 +34,7 @@ NB: À noter que le -l permet de forcer l'affichage en "long format" pour avoir 
 
 | Commande | Explication |
 | :--- | :--- |
-| `chmod 540 backup.sh` | **On corrige** le problème en ajoutant la permission d'exécution (`x`) a 
-Santa, et **on sécurise** le fichier contre toute modification ou exécution non autorisée par les elfes. |
+| `chmod 540 backup.sh` | **On corrige** le problème en ajoutant la permission d'exécution (`x`) a Santa, et **on sécurise** le fichier contre toute modification ou exécution non autorisée par les elfes. |
 
 
 #### BONUS [Notation octale pour les permissions] 
@@ -47,9 +46,6 @@ Le choix de **540** assure que le script soit fonctionnel avec les bonnes permis
 | **Propriétaire** (Père Noël) | **5** (`r+x`) | `r-x` | **Lecture et Exécution**. Permet de lancer le script. |
 | **Groupe** (Elfes) | **4** (`r`) | `r--` | **Lecture seulement**. Empêche l'exécution et la modification. |
 | **Autres** | **0** (`---`) | `---` | **Aucune permission**. Sécurité maximale. |
-
-
-Bien sûr ! Voici une version des tableaux qui compare explicitement la notation symbolique (ce qu'on écrirait sans la notation octale) à la notation octale (chiffres). Cela aide à comprendre comment les chiffres sont formés.
 
 ---
 
@@ -76,6 +72,10 @@ Bien sûr ! Voici une version des tableaux qui compare explicitement la notation
 | `r-x` | $4+0+1$ | **5** | Lecture et Exécution. (**Pour le Père Noël**) |
 | `rw-` | $4+2+0$ | **6** | Lecture et Écriture. |
 | `rwx` | $4+2+1$ | **7** | Toutes les permissions. |
+
+
+
+Intéressant non ?
 
 ---
 
