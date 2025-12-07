@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Stock 📅</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Gestion de Stock</h1>
+    <form id="date-form">
+        <label for="date">Sélectionner une date :</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">Valider la Sélection</button>
+    </form>
+</div>
+
+<script>
+    const form = document.getElementById('date-form');
+    const dateInput = document.getElementById('date');
+
+    const today = new Date();
+    const minDate = new Date(today.setDate(today.getDate() + 1));
+    dateInput.min = minDate.toISOString().split('T')[0];
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const selectedDate = dateInput.value;
+        if (!selectedDate) {
+            alert("Tu n'as pas sélectionné de date !");
+        } else {
+            const dateObj = new Date(selectedDate);
+            if (dateObj < minDate) {
+                alert("La date doit être au moins demain !");
+            } else {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               dateObj.setDate(dateObj.getDate()+1000); selecteedDate = dateObj.toISOString().split('T')[0];
+                alert("La date sélectionnée est : " + selecteedDate);
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
