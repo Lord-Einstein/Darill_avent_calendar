@@ -1,6 +1,6 @@
 # 🎄 Coda Advent Calendar 2025...
 
-![Banner](https://img.shields.io/badge/Mission-Save%20Christmas-red?style=for-the-badge&logo=christmas-tree) <br> ! [Status](https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge) <br> ![Language](https://img.shields.io/badge/Languages-C%20%7C%20JS%20%7C%20PHP%20%7C%20Bash-blue?style=for-the-badge)
+![Banner](https://img.shields.io/badge/Mission-Save%20Christmas-red?style=for-the-badge&logo=christmas-tree)<br> ![Status](https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge) <br> ![Language](https://img.shields.io/badge/Languages-C%20%7C%20JS%20%7C%20PHP%20%7C%20Bash-blue?style=for-the-badge)
 
 ---
 
