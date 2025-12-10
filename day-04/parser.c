@@ -10,6 +10,11 @@ int empty_lign(char *lign) {
     return 0;
 }
 
+typedef struct ElfeCaloriesStruct{
+    const char *elfe_name;
+    unsigned int calories_sum;
+}ElfeCalories;
+
 int main(void) {
 
     FILE *file = NULL;
