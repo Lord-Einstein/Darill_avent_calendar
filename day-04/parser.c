@@ -3,7 +3,8 @@
 
 int empty_lign(char *lign) {
     char matches_char;
-    if(sscanf(lign, " %c", matches_char) != 1) {
+    if(sscanf(lign, " %c", &matches_char) != 1) {
+        printf("-EMPTY LIGN-\n");
         return 1;
     }
     return 0;
@@ -24,7 +25,6 @@ int main(void) {
 
     while(fgets(lign_buffer, sizeof(lign_buffer), file) != NULL) {
         if(empty_lign(lign_buffer)) {
-            printf("-EMPTY LIGN-");
             continue;
         }
         printf("%s", lign_buffer);
