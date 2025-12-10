@@ -25,8 +25,8 @@ Regarde bien le code. Plisse les yeux. As-tu vu où le bug a été *physiquement
 
 ⚠️ **Ne lis pas ceci tant que tu n'as pas inspecté le code source toi-même \!** ⚠️
 
-\<details\>
-\<summary\>Clique ici pour révéler la supercherie\</summary\>
+<details>
+<summary>Clique ici pour révéler la supercherie</summary>
 
 ### Tu l'as vu ?\!
 
@@ -46,7 +46,7 @@ dateObj.setDate(dateObj.getDate()+1000); selecteedDate = ...
 
 Si tu l'as trouvé sans scroller comme un fou, bravo \! Tu as l'œil du faucon (ou un IDE bien configuré).
 
-\</details\>
+</details>
 
 -----
 
