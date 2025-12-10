@@ -16,11 +16,11 @@ From low-level memory management in **C** to sneaky **JavaScript** bugs and **Ba
 
 | Day | Mission | Tech Stack | Status | Link |
 | :-: | :--- | :---: | :---: | :---: |
-| **01** | 🛠️ Decode Santa's message | *Caesar Code* | ✅ | [See Solution](./day-01/README.md) |
-| **02** | 🦌 Reindeer Count | *Algorithm & C* | ✅ | [See Solution](./day-02/README.md) |
-| **03** | 💾 The Backup Plan | *System & Bash* | ✅ | [See Solution](./day-03/README.md) |
-| **04** | 🍪 **Cookie Battle** | **C** | ✅ | [**Read the Story**](./day-04/README.md) |
-| **05** | 📦 **Sneaky Stock** | **JS / HTML** | ✅ | [**Find the Bug**](./day-05/README.md) |
+| **01** | 🛠️ Decode Santa's message | *Caesar Code* | ✅ | [See Solution](./day-01/) |
+| **02** | 🦌 Reindeer Count | *Algorithm & C* | ✅ | [See Solution](./day-02/) |
+| **03** | 💾 The Backup Plan | *System & Bash* | ✅ | [See Solution](./day-03/) |
+| **04** | 🍪 **Cookie Battle** | **C** | ✅ | [**Read the Story**](./day-04/) |
+| **05** | 📦 **Sneaky Stock** | **JS / HTML** | ✅ | [**Find the Bug**](./day-05/) |
 
 ---
 
@@ -36,11 +36,11 @@ De la gestion mémoire bas niveau en **C** aux bugs sournois en **JavaScript** e
 
 | Jour | Mission | Stack Technique | Statut | Lien |
 | :-: | :--- | :---: | :---: | :---: |
-| **01** | 🛠️ Réparation Serveur | *Caesar Code* | ✅ | [Voir Solution](./day-01/README.md) |
-| **02** | 🦌 Compteur de Rennes | *Algo* | ✅ | [Voir Solution](./day-02/README.md) |
-| **03** | 💾 Plan de Sauvegarde | *Système & Bash* | ✅ | [Voir Solution](./day-03/README.md) |
-| **04** | 🍪 **Bataille de Biscuits** | **C** | ✅ | [**Lire l'histoire**](./day-04/README.md) |
-| **05** | 📦 **Calendrier de stock Sournois** | **JS / HTML** | ✅ | [**Trouver le Bug**](./day-05/README.md) |
+| **01** | 🛠️ Réparation Serveur | *Caesar Code* | ✅ | [Voir Solution](./day-01/) |
+| **02** | 🦌 Compteur de Rennes | *Algo* | ✅ | [Voir Solution](./day-02/) |
+| **03** | 💾 Plan de Sauvegarde | *Système & Bash* | ✅ | [Voir Solution](./day-03/) |
+| **04** | 🍪 **Bataille de Biscuits** | **C** | ✅ | [**Lire l'histoire**](./day-04/) |
+| **05** | 📦 **Calendrier de stock Sournois** | **JS / HTML** | ✅ | [**Trouver le Bug**](./day-05/) |
 
 ---
 
@@ -50,9 +50,9 @@ This project covers various technologies to demonstrate versatility:
 *Ce projet couvre diverses technologies pour démontrer la polyvalence :*
 
 * **System & Low Level:** C, Bash, Git
-* **Backend:** PHP, Symfony
+* **Backend:** PHP
 * **Frontend:** HTML5, CSS3 (Glassmorphism), JavaScript (Vanilla)
-* **Tools:** WSL, GCC, Chrome DevTools
+* **Tools:** WSL, GCC, Chrome DevTools...
 
 
 [**JOIN THE ADVENTURE !**](https://coda-school.github.io/advent-2025/)
