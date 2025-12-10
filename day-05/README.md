@@ -26,7 +26,9 @@ Regarde bien le code. Plisse les yeux. As-tu vu où le bug a été *physiquement
 ⚠️ **Ne lis pas ceci tant que tu n'as pas inspecté le code source toi-même \!** ⚠️
 
 <details>
-<summary>Clique ici pour révéler la supercherie</summary>
+<summary>Clique ici pour révéler la supercherie 🔻</summary>
+
+<br>
 
 ### Tu l'as vu ?\!
 
@@ -45,6 +47,8 @@ dateObj.setDate(dateObj.getDate()+1000); selecteedDate = ...
 3.  **La faute de frappe :** `selecteedDate` (avec deux 'e'). Une variable globale accidentelle créée juste pour l'occasion.
 
 Si tu l'as trouvé sans scroller comme un fou, bravo \! Tu as l'œil du faucon (ou un IDE bien configuré).
+
+<br>
 
 </details>
 
