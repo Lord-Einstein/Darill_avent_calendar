@@ -92,13 +92,7 @@ int main(void) {
                 elfe_calories_table[j + 1] = temp;
             }
         }
-    }
-
-    // for (int i = 0; i < elfe_cursor; i++) {
-    //     printf("%s porte %u calories.\n", elfe_calories_table[i].elfe_name, elfe_calories_table[i].calories_sum);
-    // }
-
-    
+    } 
     printf("\n--- RESULTATS BATAILLE DE BISCUITS ---\n\n");
 
     if (elfe_cursor > 0) {
