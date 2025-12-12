@@ -43,7 +43,7 @@ De la gestion mémoire bas niveau en **C** aux bugs sournois en **JavaScript** e
 | **03** | 💾 Plan de Sauvegarde | *Système & Bash* | ✅ | [Voir Solution](./day-03/) |
 | **04** | 🍪 **Bataille de Biscuits** | **C** | ✅ | [**Lire l'histoire**](./day-04/) |
 | **05** | 📦 **Calendrier de stock Sournois** | **JS / HTML** | ✅ | [**Trouver le Bug**](./day-05/) |
-| **06** | 📦 **Average Weight** | **C & TDD** | ✅ | [**Voir Solution**](./day-06/C/) |
+| **06** | 🚛 **Average Weight** | **C & TDD** | ✅ | [**Voir Solution**](./day-06/C/) |
 | **07** | 🕵️ **Revue de code** | **Java & SonarQube** | ✅ | [**Voir Solution**](./day-07//java/src/main/java/registry/) |
 
 ---
