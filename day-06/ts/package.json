@@ -1,0 +1,10 @@
+{
+  "name": "weight",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "start": "tsc && node src/weightCalculator.js"
+  }
+}
