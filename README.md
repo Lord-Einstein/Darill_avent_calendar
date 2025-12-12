@@ -2,6 +2,10 @@
 
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Lord-Einstein_Darill_avent_calendar&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Lord-Einstein_Darill_avent_calendar)
 
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Lord-Einstein_Darill_avent_calendar&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Lord-Einstein_Darill_avent_calendar)
+
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Lord-Einstein_Darill_avent_calendar&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Lord-Einstein_Darill_avent_calendar)
+
 ![Banner](https://img.shields.io/badge/Mission-Save%20Christmas-red?style=for-the-badge&logo=christmas-tree)<br> ![Status](https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge) <br> ![Language](https://img.shields.io/badge/Languages-C%20%7C%20JS%20%7C%20PHP%20%7C%20Bash-blue?style=for-the-badge)
 
 ---
