@@ -14,8 +14,9 @@
 
 double average_weight(const int weights[], int length) {
     
-    double sum = 0.0;
     if(!length) return 0.0;
+    
+    double sum = 0.0;
     
     for (int _ = 0; _ < length; _++) {
         sum += weights[_]; 
