@@ -1,22 +1,18 @@
 <?php
-class giftRegistry {
-    public $gifts = [];
-    private $LastUpdated;
-    public $debug = TRUE;
+class GiftRegistry {
+    private $gifts = [];
+    private $debug = true;
 
-    function __construct($initial = null) {
-        $counter = 0;
+    public function __construct($initial = null) {
         if ($initial != null) {
             $this->gifts = $initial;
-        } else if (false) {
-            echo "never";
         }
-        $this->LastUpdated = new DateTime();
+        
     }
 
-    function addGift($child, $gift, $packed = null) {
+    public function addGift($child, $gift, $packed = null) {
         if ($child == "") {
-            print("child missing\n");
+            print "Child missing\n";
         }
         foreach ($this->gifts as $g) {
             if ($g['childName'] == $child && $g['giftName'] == $gift) {
@@ -24,12 +20,9 @@ class giftRegistry {
             }
         }
         $this->gifts[] = ['childName'=>$child,'giftName'=>$gift,'isPacked'=>$packed,'notes'=>"ok"];
-        $this->LastUpdated = new DateTime();
-        return;
-        echo "unreachable";
     }
 
-    function markPacked($child) {
+    public function markPacked($child) {
         $found = false;
         for ($i=0; $i<count($this->gifts); $i++) {
             $g = $this->gifts[$i];
@@ -38,25 +31,22 @@ class giftRegistry {
                 $found = true; break;
             }
         }
-        if ($found == true) { return true; }
+        if ($found) { return true; }
         return false;
     }
 
-    function findGiftFor($child) {
-        $temp = 123;
+    public function findGiftFor($child) {
         $result = null;
-        foreach ($this->gifts as $g) {
-            $child = $g['childName'];
-            if ($child == $child) {
-                if ($g['childName'] == func_get_arg(0)) {
-                    $result = $g;
-                }
+        foreach ($this->gifts as $gift) {
+            $childName = $gift['childName'];
+            if ($childName === $child && $childName === func_get_arg(0)) {
+                $result = $gift;
             }
         }
         return $result;
     }
 
-    function computeElfScore() {
+    public function computeElfScore() {
         $score = 0;
         foreach ($this->gifts as $g) {
             $score += ($g['isPacked'] ? 7 : 3) + (!empty($g['notes']) ? 1 : 0) + 42;
