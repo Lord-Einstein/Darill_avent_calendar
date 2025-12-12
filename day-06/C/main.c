@@ -1,14 +1,20 @@
 #include <stdio.h>
 
-#define LENGTH(array) sizeof(array) / sizeof((array)[0])
+#define LENGTH(array) sizeof(array)/sizeof((array)[0])
 
-double averageWeight(const int w[], const int l) {
-    int s = 0;
-    for (int i = 0; i < l; i++) {
-        s += w[i];
+double averageWeight(const int weights[]) {
+    
+    double sum = 0.0;
+    int length = ((int)LENGTH(weights));
+
+    if(!length) return 0.0;
+    
+    for (int _ = 0; _ < length; _++) {
+        sum += weights[_]; 
     }
-    return s / l;
+    return sum / length;
 }
+
 
 int main() {
     const int weights1[] = {2, 5, 7, 10};
