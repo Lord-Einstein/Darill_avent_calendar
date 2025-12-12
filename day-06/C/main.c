@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 
 #define LENGTH(array) sizeof(array)/sizeof((array)[0])
+#define EPSILON 0.001
 
 double averageWeight(const int weights[]) {
     
@@ -14,6 +16,15 @@ double averageWeight(const int weights[]) {
     }
     return sum / length;
 }
+
+int is_equal(double a, double b) {
+    if(fabs(a - b) < EPSILON)
+        return 1;
+    return 0;
+
+    //là je peux aussi faire directement return (fabs(a-b) < EPSILON); Mais... question de lisibilité :p
+}
+
 
 
 int main() {
