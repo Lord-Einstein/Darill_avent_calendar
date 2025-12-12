@@ -2,7 +2,7 @@
 #include <math.h>
 #include <assert.h>
 
-#define LENGTH(array) sizeof(array)/sizeof((array)[0])
+#define LENGTH(array) (sizeof(array)/sizeof((array)[0]))
 #define EPSILON 0.001
 
 // séquences en ANSI pour les couleurs
@@ -10,11 +10,9 @@
 #define GREEN   "\033[1;32m"
 #define RESET   "\033[0m"
 
-double average_weight(const int weights[]) {
+double average_weight(const int weights[], int length) {
     
     double sum = 0.0;
-    int length = ((int)LENGTH(weights));
-
     if(!length) return 0.0;
     
     for (int _ = 0; _ < length; _++) {
@@ -34,7 +32,9 @@ int is_equal(double a, double b) {
 void basic_test() {
     printf("\nFirst test on basic case : ");
     int weights[] = {2, 5, 7, 10};
-    double average = averageWeight(weights);
+    int length = ((int)LENGTH(weights));
+
+    double average = average_weight(weights, length);
 
     assert(is_equal(average, 6.0));
     printf(GREEN" PASSED."RESET);
@@ -43,7 +43,9 @@ void basic_test() {
 void unique_element_test() {
     printf("\nFirst test on basic case : ");
     int weights[] = {2};
-    double average = averageWeight(weights);
+    int length = ((int)LENGTH(weights));
+
+    double average = average_weight(weights, length);
 
     assert(is_equal(average, 2.0));
     printf(GREEN" PASSED."RESET);
@@ -52,7 +54,9 @@ void unique_element_test() {
 void none_element_test() {
     printf("\nFirst test on basic case : ");
     int weights[] = {};
-    double average = averageWeight(weights);
+    int length = ((int)LENGTH(weights));
+
+    double average = average_weight(weights, length);
 
     assert(is_equal(average, 0.0));
     printf(GREEN" PASSED."RESET);
@@ -61,7 +65,9 @@ void none_element_test() {
 void average_decimal_precison_test() {
     printf("\nFirst test on basic case : ");
     int weights[] = {1, 2};
-    double average = averageWeight(weights);
+    int length = ((int)LENGTH(weights));
+
+    double average = average_weight(weights, length);
 
     assert(is_equal(average, 1.5));
     printf(GREEN" PASSED."RESET);
@@ -70,7 +76,18 @@ void average_decimal_precison_test() {
 
 int main() {
 
-    
+    const int weights[] = {2, 5, 7, 10};
+    int length = ((int)LENGTH(weights));
+
+    basic_test();
+    unique_element_test();
+    none_element_test();
+    average_decimal_precison_test();
+
+    printf(GREEN"\nAll tests run successfuly !\n"RESET);
+
+    system("cls"); //plut^to clear pour Linux
+    printf("\nAverage weight for %d gifts: %.2f\n", length, average_weight(weights, length));
 
     return 0;
 }
