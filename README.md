@@ -21,6 +21,7 @@ From low-level memory management in **C** to sneaky **JavaScript** bugs and **Ba
 | **03** | 💾 The Backup Plan | *System & Bash* | ✅ | [See Solution](./day-03/) |
 | **04** | 🍪 **Cookie Battle** | **C** | ✅ | [**Read the Story**](./day-04/) |
 | **05** | 📦 **Sneaky Stock** | **JS / HTML** | ✅ | [**Find the Bug**](./day-05/) |
+| **06** | 📦 **Average Weight** | **C & TDD** | ✅ | [**See Solution**](./day-06/C/) |
 
 ---
 
@@ -41,6 +42,7 @@ De la gestion mémoire bas niveau en **C** aux bugs sournois en **JavaScript** e
 | **03** | 💾 Plan de Sauvegarde | *Système & Bash* | ✅ | [Voir Solution](./day-03/) |
 | **04** | 🍪 **Bataille de Biscuits** | **C** | ✅ | [**Lire l'histoire**](./day-04/) |
 | **05** | 📦 **Calendrier de stock Sournois** | **JS / HTML** | ✅ | [**Trouver le Bug**](./day-05/) |
+| **06** | 📦 **Average Weight** | **C & TDD** | ✅ | [**Voir Solution**](./day-06/C/) |
 
 ---
 
