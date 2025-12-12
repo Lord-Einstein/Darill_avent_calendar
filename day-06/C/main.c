@@ -1,10 +1,16 @@
 #include <stdio.h>
 #include <math.h>
+#include <assert.h>
 
 #define LENGTH(array) sizeof(array)/sizeof((array)[0])
 #define EPSILON 0.001
 
-double averageWeight(const int weights[]) {
+// séquences en ANSI pour les couleurs
+#define RED     "\033[1;31m"
+#define GREEN   "\033[1;32m"
+#define RESET   "\033[0m"
+
+double average_weight(const int weights[]) {
     
     double sum = 0.0;
     int length = ((int)LENGTH(weights));
@@ -25,14 +31,46 @@ int is_equal(double a, double b) {
     //là je peux aussi faire directement return (fabs(a-b) < EPSILON); Mais... question de lisibilité :p
 }
 
+void basic_test() {
+    printf("\nFirst test on basic case : ");
+    int weights[] = {2, 5, 7, 10};
+    double average = averageWeight(weights);
+
+    assert(is_equal(average, 6.0));
+    printf(GREEN" PASSED."RESET);
+}
+
+void unique_element_test() {
+    printf("\nFirst test on basic case : ");
+    int weights[] = {2};
+    double average = averageWeight(weights);
+
+    assert(is_equal(average, 2.0));
+    printf(GREEN" PASSED."RESET);
+}
+
+void none_element_test() {
+    printf("\nFirst test on basic case : ");
+    int weights[] = {};
+    double average = averageWeight(weights);
+
+    assert(is_equal(average, 0.0));
+    printf(GREEN" PASSED."RESET);
+}
+
+void average_decimal_precison_test() {
+    printf("\nFirst test on basic case : ");
+    int weights[] = {1, 2};
+    double average = averageWeight(weights);
+
+    assert(is_equal(average, 1.5));
+    printf(GREEN" PASSED."RESET);
+}
 
 
 int main() {
-    const int weights1[] = {2, 5, 7, 10};
-    const int weights2[] = {2};
 
-    printf("Average weight for 4 gifts: %.2f\n", averageWeight(weights1, 4));
-    printf("Average weight for 1 gift: %.2f\n", averageWeight(weights2, 1));
+    
 
     return 0;
 }
