@@ -93,15 +93,15 @@ python generate_console_map.py
 ```
 
 * Version map dans le naviguateur :
-[Version naviguateur](./c1.png)
+![Version naviguateur](./c1.png)
 
 
 * Version Hard en console :
-[Version naviguateur](./c2.png)
+![Version hard console](./c2.png)
 
 
 * Version ultim avec superposition de pixels en console:
-[Version naviguateur](./c3.png)
+![Version ultimate](./c3.png)
 
 -----
 

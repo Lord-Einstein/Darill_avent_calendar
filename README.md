@@ -29,6 +29,7 @@ From low-level memory management in **C** to sneaky **JavaScript** bugs and **Ba
 | **05** | 📦 **Sneaky Stock** | **JS / HTML** | ✅ | [**Find the Bug**](./day-05/) |
 | **06** | 🚛 **Average Weight** | **C & TDD** | ✅ | [**See Solution**](./day-06/C/) |
 | **07** | 🕵️ **Linters** | **Java & SonarQube** | ✅ | [**See Solution**](./day-07//java/src/main/java/registry/) |
+| **08** | 🕵️ **Data Visualisation** | **Python & Jupyter** | ✅ | [**See Solution**](./day-08/) |
 
 ---
 
@@ -51,6 +52,7 @@ De la gestion mémoire bas niveau en **C** aux bugs sournois en **JavaScript** e
 | **05** | 📦 **Calendrier de stock Sournois** | **JS / HTML** | ✅ | [**Trouver le Bug**](./day-05/) |
 | **06** | 🚛 **Average Weight** | **C & TDD** | ✅ | [**Voir Solution**](./day-06/C/) |
 | **07** | 🕵️ **Revue de code** | **Java & SonarQube** | ✅ | [**Voir Solution**](./day-07//java/src/main/java/registry/) |
+| **08** | 🕵️ **Visualisation de données** | **Python & Jupyter** | ✅ | [**Voir Solution**](./day-08/) |
 
 ---
 
