@@ -7,7 +7,7 @@
 #define BUFFER_SIZE 256
 #define MAX_ELFES 1000
 
-int Empty_lign(char *lign) {
+int Empty_lign(const char *lign) {
     char matches_char;
     if(sscanf(lign, " %c", &matches_char) != 1) {
         return 1;
@@ -22,7 +22,7 @@ unsigned int Convert_long_to_int(unsigned long long_value) {
     return ((unsigned int)long_value);
 }
 
-unsigned int Calories_lign(char* lign) {
+unsigned int Calories_lign(const char* lign) {
     unsigned long calories_value;
     char *endptr;
     

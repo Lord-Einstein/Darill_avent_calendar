@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c9f54e48d376b336785a20a364b62b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5c9f54e48d376b336785a20a364b62b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5c9f54e48d376b336785a20a364b62b8 = L.map(
+                "map_5c9f54e48d376b336785a20a364b62b8",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b69ed577bba39e9fcf63013fb3fc80a6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b69ed577bba39e9fcf63013fb3fc80a6.addTo(map_5c9f54e48d376b336785a20a364b62b8);
+        
+    
+            var marker_399ae2a02171259fe5cd8e213818ff9b = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(map_5c9f54e48d376b336785a20a364b62b8);
+        
+    
+            var icon_eced5dcfd00f863a4a798292947c3e70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8632ff00ceca584454a36bb036afebf4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dcc7448e52a673147f851ece660e8d5b = $(`<div id="html_dcc7448e52a673147f851ece660e8d5b" style="width: 100.0%; height: 100.0%;">     <b>Delhi (India)</b><br>     Score Moyen : 70.89 / 10<br>     Nombre d'enfants : 224     </div>`)[0];
+                popup_8632ff00ceca584454a36bb036afebf4.setContent(html_dcc7448e52a673147f851ece660e8d5b);
+            
+        
+
+        marker_399ae2a02171259fe5cd8e213818ff9b.bindPopup(popup_8632ff00ceca584454a36bb036afebf4)
+        ;
+
+        
+    
+    
+                marker_399ae2a02171259fe5cd8e213818ff9b.setIcon(icon_eced5dcfd00f863a4a798292947c3e70);
+            
+    
+            var marker_4dc94cdd78ca25de1dac968712c2ec86 = L.marker(
+                [47.9016668, 1.905853],
+                {
+}
+            ).addTo(map_5c9f54e48d376b336785a20a364b62b8);
+        
+    
+            var icon_64b5e4f199dd2c2221cfd8b6365f8dfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdc2d066e81aa0a12d6f293b1c205331 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d232c3cdef783cb832bf9b57cdebc7ce = $(`<div id="html_d232c3cdef783cb832bf9b57cdebc7ce" style="width: 100.0%; height: 100.0%;">     <b>New York (United States)</b><br>     Score Moyen : 70.82 / 10<br>     Nombre d'enfants : 269     </div>`)[0];
+                popup_fdc2d066e81aa0a12d6f293b1c205331.setContent(html_d232c3cdef783cb832bf9b57cdebc7ce);
+            
+        
+
+        marker_4dc94cdd78ca25de1dac968712c2ec86.bindPopup(popup_fdc2d066e81aa0a12d6f293b1c205331)
+        ;
+
+        
+    
+    
+                marker_4dc94cdd78ca25de1dac968712c2ec86.setIcon(icon_64b5e4f199dd2c2221cfd8b6365f8dfd);
+            
+    
+            var marker_3bb4e8904f6b5e9bc28aadf8d84435e9 = L.marker(
+                [47.354453, 5.04734],
+                {
+}
+            ).addTo(map_5c9f54e48d376b336785a20a364b62b8);
+        
+    
+            var icon_b67e45dc97430a524d00dc0bb388d352 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e197ac74a2a516df8dc91932cfced42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49b97c038893d96055dedb74a4e25f83 = $(`<div id="html_49b97c038893d96055dedb74a4e25f83" style="width: 100.0%; height: 100.0%;">     <b>San Francisco (United States)</b><br>     Score Moyen : 70.8 / 10<br>     Nombre d'enfants : 233     </div>`)[0];
+                popup_5e197ac74a2a516df8dc91932cfced42.setContent(html_49b97c038893d96055dedb74a4e25f83);
+            
+        
+
+        marker_3bb4e8904f6b5e9bc28aadf8d84435e9.bindPopup(popup_5e197ac74a2a516df8dc91932cfced42)
+        ;
+
+        
+    
+    
+                marker_3bb4e8904f6b5e9bc28aadf8d84435e9.setIcon(icon_b67e45dc97430a524d00dc0bb388d352);
+            
+    
+            var marker_4f26e7c9a1a9b18a46c2e891f4ce26c5 = L.marker(
+                [47.9016668, 1.905853],
+                {
+}
+            ).addTo(map_5c9f54e48d376b336785a20a364b62b8);
+        
+    
+            var icon_e6455d93c6ca178adda3f2b7bb2c8b8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e751be2373cb41d2560027600e55e57b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba1ef2aa7be26486b9ba1eed0d486229 = $(`<div id="html_ba1ef2aa7be26486b9ba1eed0d486229" style="width: 100.0%; height: 100.0%;">     <b>Mexico City (Mexico)</b><br>     Score Moyen : 70.64 / 10<br>     Nombre d'enfants : 255     </div>`)[0];
+                popup_e751be2373cb41d2560027600e55e57b.setContent(html_ba1ef2aa7be26486b9ba1eed0d486229);
+            
+        
+
+        marker_4f26e7c9a1a9b18a46c2e891f4ce26c5.bindPopup(popup_e751be2373cb41d2560027600e55e57b)
+        ;
+
+        
+    
+    
+                marker_4f26e7c9a1a9b18a46c2e891f4ce26c5.setIcon(icon_e6455d93c6ca178adda3f2b7bb2c8b8c);
+            
+    
+            var marker_ba3c9352e483d07272a20ece88cc6aed = L.marker(
+                [47.9016668, 1.905853],
+                {
+}
+            ).addTo(map_5c9f54e48d376b336785a20a364b62b8);
+        
+    
+            var icon_0223aec16ceecb50d07f9ce953cef3fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f9b822a58b46e86ae06e7273d672fc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c75d7ca9ffc535f946438f46c3ec44df = $(`<div id="html_c75d7ca9ffc535f946438f46c3ec44df" style="width: 100.0%; height: 100.0%;">     <b>Shanghai (China)</b><br>     Score Moyen : 70.61 / 10<br>     Nombre d'enfants : 240     </div>`)[0];
+                popup_4f9b822a58b46e86ae06e7273d672fc1.setContent(html_c75d7ca9ffc535f946438f46c3ec44df);
+            
+        
+
+        marker_ba3c9352e483d07272a20ece88cc6aed.bindPopup(popup_4f9b822a58b46e86ae06e7273d672fc1)
+        ;
+
+        
+    
+    
+                marker_ba3c9352e483d07272a20ece88cc6aed.setIcon(icon_0223aec16ceecb50d07f9ce953cef3fb);
+            
+</script>
+</html>
